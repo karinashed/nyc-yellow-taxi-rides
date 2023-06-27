@@ -23,5 +23,7 @@ The Parquets were clearly meant to show rides for a specific month and year, but
 ### Lessons Learned:
 Since I had to make so many separate DataFrames, I spent a lot of time trying to keep my notebooks organized and thinking through which part of the data I needed to pull to answer each question I was looking at. For instance, for ride count I needed to look at all of the data regardless of payment type (other categories include “no charge” and “dispute”), but to analyze median tip I could only look at trips that passengers paid for with credit card. There were quite a few moments where I’d do an analysis, realize I wasn’t looking at the right subset of the data, and have to stop, think and redo. 
 
+Find the published project [here](https://karinashed.github.io/nyc-yellow-taxi-rides/)
+
 ### Regrets:
 If I had more time I would have compared the Yellow Taxi Data with the High Volume For-Hire Vehicles Data (Uber, Lyft, etc.). I started and tried to make a dataframe out of the 2019 parquets, but gave up when it wouldn’t complete after 15 minutes. I imagine each parquet is massive. I also had the idea to map information on pick up and/or drop off location (such as, a map of median tip by pick up location), but the .geojson zone map was too large to upload to DataWrapper, and I didn’t have the time to figure out how to do it with Flourish. The TL/DR is there’s a lot more I wanted to do with this data and I have *a lot* more to learn in order to do so. 
